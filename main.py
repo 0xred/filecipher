@@ -28,7 +28,7 @@ def encrypt_file():
     password = input("Enter Password: ") # ادخال الرقم السري
     key = get_key(password)
     
-    output_file = file_path + '.cccpe' # الصيغه : يمدي تغيرها بس اذا بتغيرها هنا غيرها بكل مكان بالكود وحط صيغه خاصه لك مو تجلطني وتحط صيغه ملف ام بي ثري مثلا ههه
+    output_file = file_path + '.0xreed' # الصيغه : يمدي تغيرها بس اذا بتغيرها هنا غيرها بكل مكان بالكود وحط صيغه خاصه لك مو تجلطني وتحط صيغه ملف ام بي ثري مثلا ههه
     iv = os.urandom(16)
     
     cipher = AES.new(key, AES.MODE_CBC, iv) # التشفير
@@ -47,12 +47,12 @@ def encrypt_file():
 def decrypt_file():
     root = tk.Tk()
     root.withdraw()
-    file_path = filedialog.askopenfilename(filetypes=[("CCCPE Files", "*.cccpe")]) # هنا يطلع لك نافذه ويعرض لك بس التطبيقات اللي بالصيغه المشفره علشان تختارها وتفكها
+    file_path = filedialog.askopenfilename(filetypes=[("0xreed Files", "*.0xreed")]) # هنا يطلع لك نافذه ويعرض لك بس التطبيقات اللي بالصيغه المشفره علشان تختارها وتفكها
     
     if not file_path: # نفس اللي قلناه قبل مدري ليش قاعد اكتب لك هنا بس طفشان
         return
     
-    if not file_path.endswith('.cccpe'): # الصيغه مثل ماقلت لك بالفنكشن الاول اذا بتغيره غيره بكل الكود 
+    if not file_path.endswith('.0xreed'): # الصيغه مثل ماقلت لك بالفنكشن الاول اذا بتغيره غيره بكل الكود 
         print("Invalid file format!")
         return
     
