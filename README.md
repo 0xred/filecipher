@@ -1,1 +1,1 @@
-![alt text](https://raw.githubusercontent.com/0xred/showcpuram/main/pic.png)
+![alt text](https://raw.githubusercontent.com/0xred/filecipher/main/pic.png)
